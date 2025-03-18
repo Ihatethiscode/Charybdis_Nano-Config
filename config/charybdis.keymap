@@ -102,16 +102,102 @@
         LeftClickRight {
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <10>;
+            layers = <0>;
         };
 
         RightClickRight {
             bindings = <&mkp RCLK>;
             key-positions = <17 18>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <10>;
+            layers = <0>;
         };
 
         CapsWord {
             bindings = <&caps_word>;
             key-positions = <14 15>;
+        };
+
+        mdlclickRight {
+            bindings = <&mkp MCLK>;
+            key-positions = <16 18>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <10>;
+            layers = <0>;
+        };
+
+        LeftClickLeft {
+            bindings = <&mkp LCLK>;
+            key-positions = <13 12>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <10>;
+            layers = <0>;
+        };
+
+        RightclickLeft {
+            bindings = <&mkp RCLK>;
+            key-positions = <11 12>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <10>;
+            layers = <0>;
+        };
+
+        mdlclickLeft {
+            bindings = <&mkp MCLK>;
+            key-positions = <11 13>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <10>;
+            layers = <0>;
+        };
+
+        esc_C {
+            bindings = <&kp ESCAPE>;
+            key-positions = <12 13>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <10>;
+            layers = <0>;
+        };
+
+        tabe_C {
+            bindings = <&kp TAB>;
+            key-positions = <2 3>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <10>;
+            layers = <0>;
+        };
+
+        f8_C {
+            bindings = <&kp F8>;
+            key-positions = <12 13>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <10>;
+            layers = <2>;
+        };
+
+        caps_C {
+            bindings = <&kp CLCK>;
+            key-positions = <2 3>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <10>;
+            layers = <2>;
+        };
+
+        shift_C {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <22 23>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <10>;
+            layers = <0>;
+        };
+
+        dot_C {
+            bindings = <&kp KP_DOT>;
+            key-positions = <22 23>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <10>;
+            layers = <2>;
         };
     };
 
