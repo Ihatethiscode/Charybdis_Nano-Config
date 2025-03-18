@@ -255,7 +255,39 @@ layers:
 combos:
 - p: [16, 17]
   k: '&mkp LCLK'
+  l: [DEF]
 - p: [17, 18]
   k: '&mkp RCLK'
+  l: [DEF]
 - p: [14, 15]
   k: '&caps_word'
+- p: [16, 18]
+  k: '&mkp MCLK'
+  l: [DEF]
+- p: [13, 12]
+  k: '&mkp LCLK'
+  l: [DEF]
+- p: [11, 12]
+  k: '&mkp RCLK'
+  l: [DEF]
+- p: [11, 13]
+  k: '&mkp MCLK'
+  l: [DEF]
+- p: [12, 13]
+  k: ESCAPE
+  l: [DEF]
+- p: [2, 3]
+  k: TAB
+  l: [DEF]
+- p: [12, 13]
+  k: F8
+  l: [SNM]
+- p: [2, 3]
+  k: CLCK
+  l: [SNM]
+- p: [22, 23]
+  k: LEFT SHIFT
+  l: [DEF]
+- p: [22, 23]
+  k: KP DOT
+  l: [SNM]
