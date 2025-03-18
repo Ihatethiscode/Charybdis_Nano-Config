@@ -51,14 +51,38 @@
 
 / {
     behaviors {
-        Shift_Enter: Shift_Enter {
-            compatible = "zmk,behavior-hold-tap";
-            display-name = "SHIFT_ENTER";
-            bindings = <&kp>, <&kp>;
+        td_1: td_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_1";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp ENTER>;
+        };
 
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <34>;
-            tapping-term-ms = <150>;
+        td_2: td_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_2";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL>, <&kp LEFT_ALT>;
+
+            tapping-term-ms = <300>;
+        };
+
+        td_3: td_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_3";
+            #binding-cells = <0>;
+            bindings = <&kp LA(PSCRN)>, <&kp LEFT_GUI>;
+
+            tapping-term-ms = <300>;
+        };
+
+        td_4: td_4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_4";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
+
+            tapping-term-ms = <300>;
         };
     };
 
@@ -128,10 +152,10 @@
         default_layer {
             display-name = "DEF";
             bindings = <
-  &kp Q  &kp W  &kp E    &kp R      &kp T          &kp Y              &kp U                           &kp I      &kp O          &kp P
-  &kp A  &kp S  &kp D    &kp F      &kp G          &kp H              &kp J                           &kp K      &kp SEMICOLON  &kp SQT
-  &kp Z  &kp X  &kp C    &kp V      &kp B          &kp N              &kp M                           &kp COMMA  &kp DOT        &kp SLASH
-                &mo MOU  &kp SPACE  &lt NAV TAB    &lt SMN BACKSPACE  &Shift_Enter RIGHT_SHIFT ENTER
+  &kp Q  &kp W  &kp E    &kp R      &kp T          &kp Y              &kp U  &kp I      &kp O          &kp P
+  &kp A  &kp S  &kp D    &kp F      &kp G          &kp H              &kp J  &kp K      &kp SEMICOLON  &kp SQT
+  &kp Z  &kp X  &kp C    &kp V      &kp B          &kp N              &kp M  &kp COMMA  &kp DOT        &kp SLASH
+                &mo MOU  &kp SPACE  &lt NAV TAB    &lt SMN BACKSPACE  &none
             >;
         };
 
