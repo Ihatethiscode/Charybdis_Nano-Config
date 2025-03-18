@@ -1,74 +1,75 @@
+layout: {zmk_keyboard: charybdis}
 layers:
   DEF:
   - Q
   - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Y
-  - ''''
-  - {t: A, h: LEFT SHIFT}
-  - {t: R, h: LEFT CONTROL}
-  - {t: S, h: LEFT ALT}
-  - {t: T, h: LEFT GUI}
-  - G
-  - M
-  - N
   - E
+  - R
+  - T
+  - Y
+  - U
   - I
   - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - ;
+  - ''''
   - Z
   - X
   - C
-  - D
   - V
-  - K
-  - H
+  - B
+  - N
+  - M
   - ','
   - .
   - /
-  - MOU
-  - SPACE
-  - {t: TAB, h: NAV}
-  - {t: BACKSPACE, h: SNM}
-  - {t: ENTER, h: RIGHT SHIFT}
+  - '&td_2'
+  - '&td_1'
+  - SNM
+  - {t: FUN, h: toggle}
+  - RIGHT SHIFT
   NAV:
-  - Gui+ 1
-  - Gui+ 2
-  - Gui+ 3
-  - Gui+ 4
-  - Gui+ 5
+  - Gui+1
+  - Gui+2
+  - Gui+3
+  - Gui+4
+  - Gui+5
   - PRINTSCREEN
   - BACKSPACE
   - ENTER
   - DELETE
   - {t: ▽, type: trans}
-  - Gui+ 6
-  - Gui+ 7
-  - Gui+ 8
-  - Gui+ 9
-  - Gui+ 0
+  - Gui+6
+  - Gui+7
+  - Gui+8
+  - Gui+9
+  - Gui+0
   - ENTER
   - LEFT
   - DOWN
   - UP ARROW
   - RIGHT
-  - Ctl+ Z
-  - Ctl+ X
-  - Ctl+ C
-  - {t: Ctl+ V, h: Ctl+Sft+ V}
-  - Ctl+ Y
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - {t: Ctl+V, h: Ctl+Sft+V}
+  - Ctl+Y
   - {t: ▽, type: trans}
-  - Ctl+Sft+ LEFT
-  - Sft+Ctl+ RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Sft+LEFT
+  - Sft+Ctl+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: BACKSPACE, h: FUN}
   - LSHFT
   SNM:
@@ -104,8 +105,8 @@ layers:
   - \
   - )
   - (
-  - _
-  - {type: held}
+  - {t: _, type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FUN:
   - ESC
@@ -140,7 +141,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   MOU:
@@ -174,7 +175,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -210,7 +211,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -246,31 +247,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [32, 33]
-  k: FUN
 - p: [16, 17]
   k: '&mkp LCLK'
 - p: [17, 18]
   k: '&mkp RCLK'
-- p: [3, 13]
-  k: (
-- p: [6, 16]
-  k: )
-- p: [2, 12]
-  k: '['
-- p: [7, 17]
-  k: ']'
-- p: [1, 11]
-  k: '{'
-- p: [8, 18]
-  k: '}'
-- p: [7, 8]
-  k: DELETE
 - p: [14, 15]
   k: '&caps_word'
