@@ -35,7 +35,7 @@ layers:
   - SPACE
   - {t: TAB, h: NAV}
   - {t: BACKSPACE, h: SNM}
-  - {t: ENTER, h: RIGHT SHIFT}
+  - ''
   NAV:
   - Gui+1
   - Gui+2
